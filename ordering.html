@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Payment</title>
+
+<style>
+h1{text-align: center;
+        color: 	#FF681F;
+        font-size: 50px;
+}
+    
+.container {
+      position: relative;
+      text-align: center;
+      color: white;
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+      border-left: 3px solid black;
+      border-right: 3px solid black;
+      border-radius: 20px;
+}
+
+img{
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom:0px;
+}
+
+h2 {
+     clear: none;
+    margin: 0 0 1em 0;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding: 0.5em 1em;
+    background-color: #FFEB00;
+    background-image: none;
+    text-align: center;
+    
+}
+    
+.ordering {
+     position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.align{
+    text-align: center;
+    align: center;
+}
+
+.chose{
+    font-size:15px;
+    color:black;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <img src="hostelmess.jpg" alt="hostel" height="250px" width="1300px">
+    <div class="ordering"><h1>MESS PAYMENT</h1></div>
+</div>
+
+<pre>
+
+</pre
+
+<div>
+    <h2>Mess Payment</h2>
+</div>
+
+<div class="align">
+    <form action="MessInsert.php" method="post">
+
+ 
+        STUDENT'S NAME: <input type="text" name="name" >
+        <br>
+        <br>
+        STUDENT'S ROLL NO. <input type="text" name="roll" >
+        <br>
+        <br>
+        STUDENT'S COURSE <input type="text" name="course" >
+        <br>
+        <br>
+        STUDENT'S PASSING ACADEMIC YEAR <input type="number" name="year">
+        <br>
+        <br>
+        STUDENT'S PHONE NUMBER <input type="number" name="phone">
+        <br>
+        <br>
+        STUDENT'S EMAIL ID <input type="text " name= "email">
+        <br>
+        <br>
+       
+        <label for="plan"> STUDENT'S MESS PLAN:</label>
+        <br>
+
+    <select name="plan" id="plan" class="chose">
+        <option value="plan1">Rs. 3600 (30 Breakfast and 30 Lunches)</option>
+        <option value="plan2">Rs. 3000 (15 Breakfast and 30 Lunches)</option>
+    </select>
+    <br>
+    <br>
+       
+        <input type="submit" name="submit" class="chose">
+     
+</div>
+</body>
+
+</html>
